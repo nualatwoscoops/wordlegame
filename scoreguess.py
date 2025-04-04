@@ -5,7 +5,7 @@
 
 guess = 'world'
 print("Guess:", guess)
-target = 'world'
+target = 'hello'
 print("Target:", target)
 
 def score_guess(guess, target):
@@ -16,4 +16,4 @@ def score_guess(guess, target):
 
 result = score_guess(guess, target)
 print("Got:", score_guess(guess, target))
-print("Expected:", [2, 2, 2, 2, 2])
+print("Expected:", [0, 0, 0, 0, 0])
