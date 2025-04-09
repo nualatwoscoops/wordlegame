@@ -16,7 +16,21 @@
 # end game win
 #duplicate scores not handled
 
-guess = 'world'
+"""with open('all_words.txt', 'r') as f:
+    for line in f:
+        words = f.split("")
+        if (line.strip()): #function removes unwanted lines
+            line =
+
+    all_words = f.readall_words()
+
+lines = [line.replace('\n', '') for line in lines]
+
+with open('all_words.txt', 'r') as f:
+    lines = f.read().splitlines()"""
+
+
+guess = 'ocean'
 print("Guess:", guess)
 target = 'world'
 print("Target:", target)
@@ -40,9 +54,9 @@ def score_guess(guess, target):
 
     target_list = list(target)
     guess_list = list(guess)
-    score = [0] *len(target)
+    score = [0, 0, 0, 0, 0]
 
-    for index in range(len(target)):
+    for index in range(5):
         if guess_list[index] == target_list[index]:
             score[index] = 2
         elif guess_list[index] in target_list:

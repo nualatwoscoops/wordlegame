@@ -1,0 +1,55 @@
+"""
+1. Present game instructions to player (That is, display an output to the screen).
+
+    The senior developer emphasized that the game must include instructions that
+    appear the first time the user plays the game and can be accessed any time by
+    entering “HELP” in any case. The developer said I should use a print
+    function for each line.
+
+2. Use a sequential algorithm to read a list of valid words and a separate list of target words.
+
+    Python allows you to access the file sequentially by first opening each file and then
+    iterating over the lines in the file. Since the files are formatted to have a new word
+    on each line I just need to remove whitespaces.
+
+
+3. Select a word at random from the list of target words using a library function
+    (refer to the developer briefing for the exact syntax).
+
+    The senior developer showed me a library function called random,
+    first I import random and then I can use random.choice on the list to pick
+    a target word at random.
+
+
+4. Prompt the user to enter a guess.
+
+    I will use an input function and then assign the result to a variable.
+
+
+5. Check if the guess that is entered is a valid guess.
+
+    For a guess to be considered valid it must (a) check the word length and
+    (b) check that the word the user chosen is a real word (valid) by checking
+    if it is in the list of words generated earlier. I will need to use and if/else
+    statement (i.e. a selection), with a while loop.
+
+
+6. Score the guess by providing clues on each character’s match to the target word’s characters.
+
+    I need to iterate over each character in the word (for loop) and then check if
+    the word is in the target.
+
+
+7. End the game when the player wins or when all valid attempts are complete.
+
+    If the user runs out of tries, then the loop breaks out automatically
+    (if it is a for when you run out of tries, if it is a while by checking
+    the number of turns each time) but if they win that’s when I need to
+    break out of the loop. I would use a break statement.
+
+
+8. Present a completion message to the user.
+
+    I will have a sequence of print statements. Each with its own line of
+    the completion message.
+"""
