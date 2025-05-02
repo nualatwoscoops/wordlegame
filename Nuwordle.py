@@ -1,3 +1,5 @@
+from typing import final
+
 dictionary_words = []
 
 with open('all_words.txt', 'r') as f:
@@ -18,7 +20,7 @@ with open('target_words.txt', 'r') as file:
 
 import random
 random_word = random.choice(target_words).upper()
-print("random word:", random_word)
+print("random word:", random_word) #for testing
 
 def score_guess(guess, target):
     """
@@ -79,28 +81,47 @@ show_instructions = input("Would you like instructions? yes/no: ").lower()
 if show_instructions == 'yes':
     display_instructions()
 
+total_guesses = int(input("How many guesses do you want to have:"))
+
+player_won = False
 count = 0
-while count < 6:
-    user_input = input("Enter your guess or HELP: ").upper()
-    guess_ok = False #while input the word is set to false but if below then true
+while count < total_guesses:
+    user_input = input("Enter your guess or HELP/QUIT: ").upper()
+    guess_ok = False
 
     for guess in dictionary_words:
         if guess.upper() == user_input:
             guess_ok = True
-    #else no needed because only need ==
 
-    #
+
+
     if user_input == 'HELP':
-       display_instructions()
-    elif len(user_input) != 5 or guess_ok == False: #debug:or user_input not in dictionary_words: -> guess_ok
+        display_instructions()
+    elif user_input == 'QUIT':
+        print("Goodbye.")
+        break
+    elif user_input == 'ICHEAT':
+        print("You are cheating and the target word is: " + random_word) #put in instructions
+    elif len(user_input) != 5 or guess_ok == False:
         print("Guess is not valid. Please try again with a 5 letter word from the list.")
+
     else:
         count = count + 1
-        print(user_input + '-' + random_word)
+        print(user_input)
         result = score_guess(user_input,random_word)
         print("Your score is: ", result)
         if result == [2, 2, 2, 2, 2]:
             print("You guessed the NUWORDLE!")
+            player_won = True
             break
-    if count == 6: #can use elif
-        print("You Lost")
+    if count == total_guesses:
+        print("You Lost. The word was " + random_word)
+        player_won = False
+
+
+with open('game_results.txt', 'a') as file:
+        ### int.count ###
+        if player_won == True:
+            file.write("Success, the target word was:" + random_word + "It was guessed in " + count + " attempts" + "\n")
+        else:
+            file.write("Failure, the target word was: " + random_word + "\n")
