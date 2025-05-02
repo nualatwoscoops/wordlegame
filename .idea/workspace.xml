@@ -7,7 +7,6 @@
     <list default="true" id="f71dc12e-6cff-4ee7-ac88-ce909568923b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nuwordle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nuwordle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreguessalgo.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,32 +32,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.1instructions.executor": "Run",
-    "Python.3randomword.executor": "Run",
-    "Python.7triesandend.executor": "Run",
-    "Python.Debug2.executor": "Run",
-    "Python.Nuwordle.executor": "Run",
-    "Python.docswithnotes.executor": "Run",
-    "Python.drafts with notes.executor": "Run",
-    "Python.exp.executor": "Run",
-    "Python.instructions.executor": "Run",
-    "Python.part_b_tests.executor": "Run",
-    "Python.scoreguess.executor": "Run",
-    "Python.scoreguessalgo.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/weema/PycharmProjects/wordlegame",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.1instructions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3randomword.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7triesandend.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Debug2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Nuwordle.executor&quot;: &quot;Run&quot;,
+    &quot;Python.docswithnotes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.drafts with notes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.instructions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.part_b_tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.py test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scoreguess.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scoreguessalgo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/weema/PycharmProjects/wordlegame&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,7 +83,8 @@
       <workItem from="1744015156941" duration="20252000" />
       <workItem from="1744190068107" duration="22155000" />
       <workItem from="1746005174275" duration="2361000" />
-      <workItem from="1746157779285" duration="971000" />
+      <workItem from="1746157779285" duration="4437000" />
+      <workItem from="1746176255446" duration="513000" />
     </task>
     <servers />
   </component>
@@ -96,6 +97,7 @@
     <SUITE FILE_PATH="coverage/Nuwordle_py$Nuwordle.coverage" NAME="Nuwordle Coverage Results" MODIFIED="1744345384448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WordleGame$1instructions.coverage" NAME="1instructions Coverage Results" MODIFIED="1744040194001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Nuwordle_py$Debug2.coverage" NAME="Debug2 Coverage Results" MODIFIED="1744343099288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/OneDrive/Desktop/Programming Course/Python/wordle keep files" />
+    <SUITE FILE_PATH="coverage/Nuwordle_py$py_test.coverage" NAME="py test Coverage Results" MODIFIED="1746173831972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WordleGame$docswithnotes.coverage" NAME="docswithnotes Coverage Results" MODIFIED="1743762040221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WordleGame$scoreguessalgo.coverage" NAME="scoreguessalgo Coverage Results" MODIFIED="1744039743519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Nuwordle_py$part_b_tests.coverage" NAME="part_b_tests Coverage Results" MODIFIED="1744197294389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

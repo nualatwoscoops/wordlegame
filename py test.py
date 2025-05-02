@@ -1,26 +1,26 @@
-from typing import final
-
 dictionary_words = []
 
 with open('all_words.txt', 'r') as f:
-        for line in f:
-            word_list = line.split()
-            for word in word_list:
-                cleaned_word = word.strip()
-                dictionary_words.append(cleaned_word)
+    for line in f:
+        word_list = line.split()
+        for word in word_list:
+            cleaned_word = word.strip()
+            dictionary_words.append(cleaned_word)
 
 target_words = []
 
 with open('target_words.txt', 'r') as file:
-        for line in file:
-            target_word_list = line.split()
-            for word in target_word_list:
-                target_cleaned_word = word.strip()
-                target_words.append(target_cleaned_word)
+    for line in file:
+        target_word_list = line.split()
+        for word in target_word_list:
+            target_cleaned_word = word.strip()
+            target_words.append(target_cleaned_word)
 
 import random
-secret_word = random.choice(target_words).upper()
-print("random word:", secret_word) #for testing
+
+random_word = random.choice(target_words).upper()
+print("random word:", random_word)
+
 
 def score_guess(guess, target):
     """
@@ -52,6 +52,7 @@ def score_guess(guess, target):
             score[index] = 0
     return score  # return list of scores
 
+
 def display_instructions():
     """Displays the game instructions to the player."""
     print("WElCOME TO NUWORDLE!")
@@ -76,52 +77,33 @@ def display_instructions():
     print("-" * 30)
     print("Good luck!")
 
+
 show_instructions = input("Would you like instructions? yes/no: ").lower()
 
 if show_instructions == 'yes':
     display_instructions()
 
-total_guesses = int(input("How many guesses do you want to have:"))
-
-player_won = False
-guess_number = 0
-while guess_number < total_guesses:
-    user_input = input("Enter your guess or HELP/QUIT: ").upper()
+count = 0
+while count < 6:
+    user_input = input("Enter your guess or HELP: ").upper()
     guess_ok = False
 
     for guess in dictionary_words:
         if guess.upper() == user_input:
             guess_ok = True
 
-
-
     if user_input == 'HELP':
         display_instructions()
-    elif user_input == 'QUIT':
-        print("Goodbye.")
-        break
-    elif user_input == 'ICHEAT':
-        print("You are cheating and the target word is: " + secret_word) #put in instructions
     elif len(user_input) != 5 or guess_ok == False:
         print("Guess is not valid. Please try again with a 5 letter word from the list.")
-
     else:
-        guess_number = guess_number + 1
+        count = count + 1
         print(user_input)
-        result = score_guess(user_input,secret_word)
+        result = score_guess(user_input, random_word)
         print("Your score is: ", result)
         if result == [2, 2, 2, 2, 2]:
             print("You guessed the NUWORDLE!")
-            player_won = True
             break
-    if guess_number == total_guesses:
-        print("You Lost. The word was " + secret_word)
-        player_won = False
+    if count == 6:
+        print("You Lost")
 
-
-with open('game_results.txt', 'a') as file:
-        ### int.guess_number ###
-        if player_won == True:
-            file.write("Success, the target word was:" + secret_word + "It was guessed in " + guess_number + " attempts" + "\n")
-        else:
-            file.write("Failure, the target word was: " + secret_word + "\n")
