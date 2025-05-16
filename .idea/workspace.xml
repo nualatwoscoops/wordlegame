@@ -7,6 +7,7 @@
     <list default="true" id="f71dc12e-6cff-4ee7-ac88-ce909568923b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nuwordle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nuwordle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/game_results.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/weema/PycharmProjects/wordlegame&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/weema/PycharmProjects/RIOT tasks&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -84,7 +85,8 @@
       <workItem from="1744190068107" duration="22155000" />
       <workItem from="1746005174275" duration="2361000" />
       <workItem from="1746157779285" duration="4437000" />
-      <workItem from="1746176255446" duration="513000" />
+      <workItem from="1746176255446" duration="4900000" />
+      <workItem from="1747355073742" duration="2181000" />
     </task>
     <servers />
   </component>
@@ -94,7 +96,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WordleGame$drafts_with_notes.coverage" NAME="drafts with notes Coverage Results" MODIFIED="1743761582834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WordleGame$exp.coverage" NAME="exp Coverage Results" MODIFIED="1744038493537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Nuwordle_py$Nuwordle.coverage" NAME="Nuwordle Coverage Results" MODIFIED="1744345384448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Nuwordle_py$Nuwordle.coverage" NAME="Nuwordle Coverage Results" MODIFIED="1747357251130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/WordleGame$1instructions.coverage" NAME="1instructions Coverage Results" MODIFIED="1744040194001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Nuwordle_py$Debug2.coverage" NAME="Debug2 Coverage Results" MODIFIED="1744343099288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/OneDrive/Desktop/Programming Course/Python/wordle keep files" />
     <SUITE FILE_PATH="coverage/Nuwordle_py$py_test.coverage" NAME="py test Coverage Results" MODIFIED="1746173831972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

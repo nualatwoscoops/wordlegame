@@ -1,1 +1,6 @@
-Failure, the target word was: OVERTFailure, the target word was: NOOSE
+Failure, the target word was: OVERT
+Success, the target word was:ABASEIt was guessed in 1 attempts
+Success, the target word was:WRECK
+ It was guessed in 1 attempts
+
+ Failure, the target word was: STEEL

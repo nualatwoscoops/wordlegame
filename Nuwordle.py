@@ -83,45 +83,56 @@ if show_instructions == 'yes':
 
 total_guesses = int(input("How many guesses do you want to have:"))
 
-player_won = False
-guess_number = 0
-while guess_number < total_guesses:
-    user_input = input("Enter your guess or HELP/QUIT: ").upper()
-    guess_ok = False
+def play_game(secret_word, total_guesses, dictionary_words):
+    """This function manages the main game loop"""
+    player_won = False
+    guess_number = 0
+    while guess_number < total_guesses:
+        user_input = input("Enter your guess or HELP/QUIT: ").upper()
+        guess_ok = False
 
-    for guess in dictionary_words:
-        if guess.upper() == user_input:
-            guess_ok = True
-
-
-
-    if user_input == 'HELP':
-        display_instructions()
-    elif user_input == 'QUIT':
-        print("Goodbye.")
-        break
-    elif user_input == 'ICHEAT':
-        print("You are cheating and the target word is: " + secret_word) #put in instructions
-    elif len(user_input) != 5 or guess_ok == False:
-        print("Guess is not valid. Please try again with a 5 letter word from the list.")
-
-    else:
-        guess_number = guess_number + 1
-        print(user_input)
-        result = score_guess(user_input,secret_word)
-        print("Your score is: ", result)
-        if result == [2, 2, 2, 2, 2]:
-            print("You guessed the NUWORDLE!")
-            player_won = True
+        if user_input == 'HELP':
+            display_instructions()
+        elif user_input == 'QUIT':
+            print("Goodbye.")
             break
-    if guess_number == total_guesses:
-        print("You Lost. The word was " + secret_word)
-        player_won = False
+        elif user_input == 'ICHEAT':
+            print("You are cheating and the target word is: " + secret_word) #put in instructions
+            continue
 
+        for guess in dictionary_words:
+            if guess.upper() == user_input:
+                guess_ok = True
+                break
 
-with open('game_results.txt', 'a') as file:
-        ### int.guess_number ###
-        if player_won == True:
-            file.write("Success, the target word was:" + secret_word + "It was guessed in " + guess_number + " attempts" + "\n")
+        if len(user_input) != 5 or guess_ok == False:
+            print("Guess is not valid. Please try again with a 5 letter word from the list.")
+            continue
+
         else:
-            file.write("Failure, the target word was: " + secret_word + "\n")
+            guess_number = guess_number + 1
+            print(user_input)
+            result = score_guess(user_input,secret_word)
+            print("Your score is: ", result)
+
+        if result == [2, 2, 2, 2, 2]:
+           print("You guessed the NUWORDLE!")
+           player_won = True
+           break
+
+    if guess_number == total_guesses: #make this if not?
+            print("You Lost. The word was " + secret_word)
+            player_won = False
+
+    return player_won, guess_number
+
+def record_game_result(secret_word, player_won, guess_number):
+    """"This function records the game result to a file."""
+    with open('game_results.txt', 'a') as file:
+        if player_won == True:
+            file.write("Success, the target word was:" + secret_word + " It was guessed in " + str(guess_number) + " attempts" + "\n")
+        else:
+            file.write("\n Failure, the target word was: " + secret_word + "\n")
+
+won, attempts = play_game(secret_word, total_guesses, dictionary_words)
+record_game_result(secret_word, won, attempts)
